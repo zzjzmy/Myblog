@@ -3,11 +3,14 @@
 * xshell 6 绿色破解版：关注公众号：JavaCat，回复 xshell 获取
 * Navicat 11 简体中文版：关注公众号：JavaCat，回复 navicat 获取
 
+<<<<<<< HEAD
 公众号二维码：
 
 ![JavaCat](//image-1300566513.cos.ap-guangzhou.myqcloud.com/upload/images/20201020/7fa16a1f957f4cfebe7be1f6675f6f36.png "JavaCat")
 
 直接扫码回复对应关键字
+=======
+>>>>>>> b904f3f (终稿)
 
 **推荐阅读：**
 
