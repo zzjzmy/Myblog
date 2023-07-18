@@ -8,6 +8,9 @@
 
         <div class="maction">
             <span><el-link type="primary" href="/blogs">主页</el-link></span>
+            
+            <el-divider direction="vertical"></el-divider>
+            <span><el-link type="like" href="/blogs/like">搜索</el-link></span>
 
             <el-divider direction="vertical"></el-divider>
             <span><el-link type="success" href="/blog/add">发表博客</el-link></span>

@@ -11,11 +11,16 @@ import Login from '../views/Login.vue'
 import Blogs from '../views/Blogs.vue'
 import BlogEdit from '../views/BlogEdit.vue'
 import BlogDetail from '../views/BlogDetail.vue'
-
+import BlogLike from '../views/BlogLike.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+    {
+        path: '/blogs/like',
+        name: 'BlogLike',
+        component: BlogLike
+    },
     {
         path: '/',
         name: 'index',

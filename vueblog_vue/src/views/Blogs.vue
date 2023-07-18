@@ -1,19 +1,17 @@
 <template>
     <div>
-        <Header></Header>
+        <Header></Header>       
         <div class="block">
             <el-timeline>
-                <el-timeline-item :timestamp="blog.created" placement="top" v-for="blog in blogs">
+                <el-timeline-item :timestamp="blog.created" placement="top" v-for="blog in blogs" :key="blog.id">
                     <el-card>
                         <router-link :to="{name:'BlogDetail',params:{blogId:blog.id}}">
                             <h4>{{blog.title}}</h4>
                         </router-link>
-                        <p>{{blog.description}}</p>
+                            <p>{{blog.description}}</p>
                     </el-card>
                     <!-- <el-button class="delete-button" type="danger" icon="el-icon-delete" @click="deleteBlog(blog.id)"></el-button> -->
-
                 </el-timeline-item>
-
             </el-timeline>
         </div>
         <el-pagination class="mpage"
@@ -66,9 +64,12 @@
                 })
             }
         },
+
         created() {
             this.page(1)
         }
+        
+        
     }
 </script>
 
@@ -77,4 +78,7 @@
         margin: 0 auto;
         text-align: center;
     }
+
+
+
 </style>
