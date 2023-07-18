@@ -37,6 +37,13 @@ public class BlogController {
         return Result.succ(pageData);
     }
 
+    @GetMapping("blogs/like")
+    public Result list2(@RequestParam(value = "") String keyword, @RequestParam(defaultValue = "1") Integer currentPage) {
+        Page<Blog> page = new Page<>(currentPage, 5);
+        IPage<Blog> pageData = blogService.page(page, new QueryWrapper<Blog>().like("title", keyword).or().like("content", keyword).orderByDesc("created"));
+        return Result.succ(pageData);
+    }
+
     @GetMapping("/blog/{id}")
     public Result detail(@PathVariable(name = "id") Long id) {
         Blog blog = blogService.getById(id);
